@@ -144,6 +144,7 @@ module.exports = function (grunt) {
       },
       html: [
         '<%= config.app %>/popup.html',
+        '<%= config.app %>/background.html',
         '<%= config.app %>/options.html'
       ]
     },

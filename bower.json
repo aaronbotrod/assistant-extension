@@ -1,6 +1,13 @@
 {
   "name": "assist",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "uri.js": "~1.14.1",
+    "lodash": "~2.4.1",
+    "angular-ui": "~0.4.0",
+    "angular-ui-bootstrap": "~0.12.0",
+    "angular": "~1.3.8",
+    "angular-local-storage": "~0.1.5"
+  },
   "devDependencies": {}
 }

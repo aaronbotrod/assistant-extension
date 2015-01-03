@@ -1,0 +1,679 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"mde",
+				"modelSchema"
+			],
+			[
+				"model",
+				"modelSchemas"
+			],
+			[
+				"Node",
+				"NodeSchema"
+			],
+			[
+				"local",
+				"localConfig"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/scripts/chromereload.js",
+			"settings":
+			{
+				"buffer_size": 614,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/scripts/background.js",
+			"settings":
+			{
+				"buffer_size": 682,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/manifest.json",
+			"settings":
+			{
+				"buffer_size": 1098,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/background.html",
+			"settings":
+			{
+				"buffer_size": 335,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "bower.json",
+			"settings":
+			{
+				"buffer_size": 119,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<!doctype html>\n<html>\n    <head>\n        <meta charset=\"utf-8\">\n        <!-- build:css styles/vendor.css -->\n        <!-- bower:css -->\n        <!-- endbower -->\n        <!-- endbuild -->\n        <!-- build:css styles/main.css -->\n        <link href=\"styles/main.css\" rel=\"stylesheet\">\n        <!-- endbuild -->\n    </head>\n    <body>\n        <h1>'Allo, 'Allo!</h1>\n\n        <!-- build:js scripts/vendor.js -->\n        <!-- bower:js -->\n        <script src=\"bower_components/jquery/jquery.js\"></script>\n        <script src=\"bower_components/lodash/dist/lodash.compat.js\"></script>\n        <!-- endbower -->\n        <!-- endbuild -->\n\n        <!-- build:js scripts/popup.js -->\n        <script src=\"scripts/popup.js\"></script>\n        <!-- endbuild -->\n    </body>\n</html>\n",
+			"file": "app/popup.html",
+			"file_size": 1520,
+			"file_write_time": 1419652684000000,
+			"settings":
+			{
+				"buffer_size": 773,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/scripts/contentscript.js",
+			"settings":
+			{
+				"buffer_size": 175,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 47.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: A",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/aaronbotello/Development/assistant/extension/app/scripts/url.js",
+		"/Users/aaronbotello/Development/assistant/extension/app/bower_components/simpleUri/bower.json",
+		"/Users/aaronbotello/Development/assistant/extension/bower.json",
+		"/Users/aaronbotello/Development/assistant/extension/app/scripts/backgroudn.html",
+		"/Users/aaronbotello/Development/assistant/extension/app/manifest.json",
+		"/Users/aaronbotello/Development/assistant/extension/app/popup.html",
+		"/Users/aaronbotello/Development/comicdb/client/components/navbar/navbar.controller.coffee",
+		"/Users/aaronbotello/Development/comicdb/client/app/main/main.html",
+		"/Users/aaronbotello/Development/comicdb/client/index.html",
+		"/Users/aaronbotello/Development/comicdb/client/app/api/api.html",
+		"/Users/aaronbotello/Development/comicdb/client/app/api/api.controller.coffee",
+		"/Users/aaronbotello/Development/comicdb/client/components/navbar/navbar.html",
+		"/Users/aaronbotello/Development/comicdb/client/app/modelForm/modelForm.html",
+		"/Users/aaronbotello/Development/comicdb/client/app/modelForm/modelForm.directive.coffee",
+		"/Users/aaronbotello/Development/comicdb/server/api/node/node.model.js",
+		"/Users/aaronbotello/Development/comicdb/client/app/model_form/model_form.directive.coffee",
+		"/Users/aaronbotello/Development/comicdb/node_modules/grunt-express-server/tasks/lib/server.js",
+		"/Users/aaronbotello/Development/comicdb/server/config/local.env.js",
+		"/Users/aaronbotello/Development/comicdb/server/app.js",
+		"/Users/aaronbotello/Development/comicdb/Gruntfile.js",
+		"/Users/aaronbotello/Development/comicdb/server/api/api/api.controller.js",
+		"/Users/aaronbotello/Development/comicdb/server/routes.js",
+		"/Users/aaronbotello/Development/comicdb/server/api/api/index.js",
+		"/Users/aaronbotello/Development/comicdb/server/config/environment/development.js",
+		"/Users/aaronbotello/Development/comicdb/server/config/environment/index.js",
+		"/Users/aaronbotello/Development/comicdb/package.json",
+		"/Users/aaronbotello/Development/comicdb/Y/api/api.coffee",
+		"/Users/aaronbotello/Development/comicdb/client/app/characters/characters.html",
+		"/Users/aaronbotello/Development/comicdb/client/app/characters/characters.coffee",
+		"/Users/aaronbotello/Development/comicdb/.tmp/app/characters/characters.src.coffee",
+		"/Users/aaronbotello/Development/comicdb/client/app/main/main.coffee",
+		"/Users/aaronbotello/Development/comicdb/server/api/node/character.controller.js",
+		"/Users/aaronbotello/Development/comicdb/server/api/node/character.router.js",
+		"/Users/aaronbotello/Development/comicdb/client/app/main/main.controller.coffee",
+		"/Users/aaronbotello/Development/comicdb/server/api/node/node.middlewares.js",
+		"/Users/aaronbotello/Development/comicdb/node_modules/express/benchmarks/middleware.js",
+		"/Users/aaronbotello/Development/comicdb/server/auth/auth.service.js",
+		"/Users/aaronbotello/Development/comicdb/server/api/node/comic.controller.js",
+		"/Users/aaronbotello/Development/comicdb/server/api/node/comic.router.js",
+		"/Users/aaronbotello/Development/comicdb/client/components/auth/user.service.coffee",
+		"/Users/aaronbotello/Development/comicdb/.gitignore",
+		"/Users/aaronbotello/Development/comicdb/server/config/environment/production.js",
+		"/Users/aaronbotello/Development/comicdb/server/api/node/node.socket.js",
+		"/Users/aaronbotello/Development/comicdb/client/app/admin/admin.controller.coffee",
+		"/Users/aaronbotello/Development/comicdb/.tmp/components/auth/user.js",
+		"/Users/aaronbotello/Development/playground/server/config/local.env.js",
+		"/Users/aaronbotello/Development/playground/node_modules/grunt-express-server/test/server.coffee",
+		"/Users/aaronbotello/Development/fullstack/e2e/main/main.po.js",
+		"/Users/aaronbotello/Development/fullstack/client/app/app.scss",
+		"/Users/aaronbotello/Development/fullstack/client/app/app.coffee",
+		"/Users/aaronbotello/Development/fullstack/package.json",
+		"/Users/aaronbotello/Development/comics/packages/comments/package.json",
+		"/Users/aaronbotello/Development/comics/packages/comments/server/routes/comments.js",
+		"/Users/aaronbotello/Development/comics/packages/articles/public/articles.js",
+		"/Users/aaronbotello/Development/comics/packages/system/public/init.js",
+		"/Users/aaronbotello/Development/comics/Gruntfile.js",
+		"/Users/aaronbotello/Development/comics/.bower-cache/4fb30846af9d14960a8cdb35aa9f8f19/0.11.0/ui-bootstrap-tpls.js",
+		"/Users/aaronbotello/Development/camera-test/hooks/README.md",
+		"/Users/aaronbotello/Development/camera-test/www/config.xml",
+		"/Users/aaronbotello/Development/camera-test/.cordova/config.json",
+		"/Users/aaronbotello/Development/camera-test/www/index.html",
+		"/Users/aaronbotello/Development/camera-test/www/js/index.js",
+		"/Users/aaronbotello/Development/todo/package.json",
+		"/Users/aaronbotello/Development/todo/server/config/express.js",
+		"/Users/aaronbotello/Development/todo/server/config/config.js",
+		"/Users/aaronbotello/Development/todo/server.js",
+		"/Users/aaronbotello/Development/ToDo/packages/system/public/routes/system.js",
+		"/Users/aaronbotello/Development/ToDo/config/env/all.js",
+		"/Users/aaronbotello/Development/ToDo/server.js",
+		"/Users/aaronbotello/Development/ToDo/package.json"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"-*/node_modules/*, -*/bower_components/*,-*/.bower-cache, -*/.tmp/*, -*/dist/*",
+			"-*/node_modules/*, -*/bower_components/*,-*/.bower-cache, -*/.tmp/*",
+			"-*/node_modules/*, -*/bower_components/*,-*/.bower-cache, -*/.tmp",
+			"-*/node_modules/*, -*/bower_components/*,-*/.bower-cache",
+			"-/Users/aaronbotello/Development/comics/node_modules/*, -/Users/aaronbotello/Development/comics/bower_components/*,-/Users/aaronbotello/Development/comics/.bower-cache, *.js",
+			"-/Users/aaronbotello/Development/comics/node_modules/*, -/Users/aaronbotello/Development/ToDo/bower_components/*,-/Users/aaronbotello/Development/ToDo/.bower-cache, *.js",
+			"-/Users/aaronbotello/Development/comics/node_modules/*, -/Users/aaronbotello/Development/ToDo/bower_components/*,-/Users/aaronbotello/Development/ToDo/.bower-cache",
+			"-/Users/aaronbotello/Development/ToDo/node_modules/*, -/Users/aaronbotello/Development/ToDo/bower_components/*,-/Users/aaronbotello/Development/ToDo/.bower-cache",
+			"*.js, -/Users/aaronbotello/Development/ToDo/node_modules/*, -/Users/aaronbotello/Development/ToDo/bower_components/*,-/Users/aaronbotello/Development/ToDo/.bower-cache",
+			"*.js, -/Users/aaronbotello/Development/ToDo/node_modules/*, -/Users/aaronbotello/Development/ToDo/bower_components/*,-/Users/aaronbotello/Development/ToDo/.bower-cache/*",
+			"*.js, -/Users/aaronbotello/Development/ToDo/node_modules/*, -/Users/aaronbotello/Development/ToDo/bower_components/*,-/Users/aaronbotello/Development/ToDo/.bower-cache",
+			"*.js, -/Users/aaronbotello/Development/ToDo/node_modules/*, -/Users/aaronbotello/Development/ToDo/bower_components/*,-/Users/aaronbotello/Development/ToDo/.bower",
+			"*.js, -/Users/aaronbotello/Development/ToDo/node_modules/*, -/Users/aaronbotello/Development/ToDo/bower_components/*",
+			"*.js, -/Users/aaronbotello/Development/ToDo/node_modules, -/Users/aaronbotello/Development/ToDo/bower_components",
+			"*.js, -/Users/aaronbotello/Development/ToDo/node_modules, ,/Users/aaronbotello/Development/ToDo/bower_components",
+			"*.js, -/Users/aaronbotello/Development/ToDo/node_modules",
+			"*.js",
+			".js"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"background_page",
+			"URL",
+			"Home",
+			"modelSchemas",
+			"debug",
+			"GOOGLE_SECRET",
+			"nodemon",
+			"nodemone",
+			"express",
+			"express-keepalive",
+			"nodemon",
+			"env",
+			"grunt-express-server",
+			"express",
+			"express:dev",
+			"console.log",
+			"User",
+			"/admin",
+			"oken",
+			"User",
+			"jwt",
+			"isAuthenticated",
+			"api/users",
+			"api/users/me",
+			"users",
+			"static",
+			"stati",
+			"static",
+			"/api/v1/Characters/count",
+			"Characters",
+			"express",
+			"Schema",
+			"text",
+			"express",
+			"local.env.js",
+			"env",
+			"local",
+			"port",
+			"me",
+			"title",
+			"appName",
+			"<title>",
+			"cordova/plugin_list",
+			"Package",
+			"package",
+			"alert",
+			"alert(",
+			"alert",
+			"makeApiCall",
+			"handle",
+			"watch:",
+			"concurrent",
+			"jshint",
+			"client_id",
+			"apiKey",
+			"wiredep",
+			"appConfig",
+			"yeoman.app",
+			"wiredep",
+			"cdn",
+			"register",
+			"Loading \"cdnify.js\" tasks...ERROR\nregister",
+			"cdnify",
+			"newer",
+			"jshint",
+			"test",
+			"chalk",
+			"test",
+			"open",
+			"regist",
+			"fs.",
+			"express",
+			"port"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Defini",
+			"Definition"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/scripts/chromereload.js",
+					"settings":
+					{
+						"buffer_size": 614,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1,
+								2
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/scripts/background.js",
+					"settings":
+					{
+						"buffer_size": 682,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								664,
+								664
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/manifest.json",
+					"settings":
+					{
+						"buffer_size": 1098,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								247,
+								247
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/background.html",
+					"settings":
+					{
+						"buffer_size": 335,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								303,
+								303
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "bower.json",
+					"settings":
+					{
+						"buffer_size": 119,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								63,
+								63
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/popup.html",
+					"settings":
+					{
+						"buffer_size": 773,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								773,
+								773
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/scripts/contentscript.js",
+					"settings":
+					{
+						"buffer_size": 175,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								173,
+								173
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"bower",
+				"bower.json"
+			],
+			[
+				"navbarcontro",
+				"client/components/navbar/navbar.controller.coffee"
+			],
+			[
+				"main.html",
+				"client/app/main/main.html"
+			],
+			[
+				"index.html",
+				"client/index.html"
+			],
+			[
+				"grunt",
+				"Gruntfile.js"
+			],
+			[
+				"packa",
+				"package.json"
+			],
+			[
+				"g",
+				"Gruntfile.js"
+			],
+			[
+				"api.coff",
+				"Y/api/api.coffee"
+			],
+			[
+				"characters.coff",
+				"client/app/characters/characters.coffee"
+			],
+			[
+				"characters.co",
+				".tmp/app/characters/characters.src.coffee"
+			],
+			[
+				"character.con",
+				"server/api/node/character.controller.js"
+			],
+			[
+				"middlewares",
+				"server/api/node/node.middlewares.js"
+			],
+			[
+				"midde",
+				"node_modules/express/benchmarks/middleware.js"
+			],
+			[
+				"charac.router",
+				"server/api/node/character.router.js"
+			],
+			[
+				"comic.router",
+				"server/api/node/comic.router.js"
+			],
+			[
+				"app.js",
+				"server/app.js"
+			],
+			[
+				"mainctr",
+				"client/app/main/main.controller.coffee"
+			],
+			[
+				"node.model",
+				"server/api/node/node.model.js"
+			],
+			[
+				"main.",
+				"client/app/main/main.coffee"
+			],
+			[
+				"server.",
+				"node_modules/grunt-express-server/test/server.coffee"
+			],
+			[
+				"index.js",
+				"www/js/index.js"
+			],
+			[
+				"cordova",
+				".cordova/config.json"
+			],
+			[
+				"main.js",
+				"app/scripts/controllers/main.js"
+			],
+			[
+				"main",
+				"app/views/main.html"
+			],
+			[
+				"package",
+				"package.json"
+			],
+			[
+				"server",
+				"server.js"
+			],
+			[
+				"pack",
+				"package.json"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}

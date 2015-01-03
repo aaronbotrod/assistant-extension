@@ -11,15 +11,25 @@
         <!-- endbuild -->
     </head>
     <body>
-        <h1>'Allo, 'Allo!</h1>
-
+        <section ui-view="" class="content">
+            <h1>How may I assist you?</h1>
+        </section>
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/uri.js/src/URI.min.js"></script>
+        <script src="bower_components/lodash/dist/lodash.compat.js"></script>
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
-        <!-- build:js scripts/popup.js -->
-        <script src="scripts/popup.js"></script>
+        <!-- build:js({scripts/popup}) scripts/popup/popup.js -->
+        <!-- add injector -->
+        <!-- injector:js -->
+        <script src="scripts/popup/popup.js"></script>
+        <script src="scripts/popup/popup.controller.js"></script>
+        <!-- endinjector -->
         <!-- endbuild -->
     </body>
 </html>

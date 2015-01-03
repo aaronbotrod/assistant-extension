@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>
+      Assistant Extension
+    </title>
+  </head>
+  <body ng-app="AssistExtension">
+  <section ng-controller="BackgroundCtr" class="content">
+      <h1>{{header}}</h1>
+      <form>
+          <input type="url" ng-model="config.domain" placeholder="Domain ex. www.facebook.com"></input>
+          <input type="text" ng-model="config.name" placeholder="Setting Name ex. Work"></input>
+          <button ng-click="saveConfiguration(config)">Save</button>
+      </form>
+      <div class="configuration" ng-repeat="configuration in configurations">
+          <div class="name">{{configuration.name}}</div>
+          <div class="domain">{{configuration.domain}}</div>
+      </div>
+      <h1>Current Configuration</h1>
+      <input type="text" ng-model="currentConfiguration" placeholder="Setting Name ex. Work"></input>
+  </section>
+  <script src="scripts/chromereload.js"></script>
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/uri.js/src/URI.min.js"></script>
+  <script src="bower_components/lodash/dist/lodash.compat.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js scripts/background/*.js -->
+  <script src="scripts/background/background.controller.js"></script>
+  <!-- endbuild -->
+  </body>
+</html>

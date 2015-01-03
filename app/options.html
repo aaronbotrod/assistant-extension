@@ -9,16 +9,35 @@
         <link href="styles/main.css" rel="stylesheet">
         <!-- endbuild -->
     </head>
-    <body>
-        <h1>'Allo, 'Allo!</h1>
+    <body ng-app="assistExtension">
+        <section ng-controller="OptionsCtr" class="content">
+            <h1>{{header}}</h1>
+            <form>
+                <input type="url" ng-model="configuration.domain" placeholder="Domain ex. www.facebook.com"></input>
+                <input type="text" ng-model="configuration.name" placeholder="Setting Name ex. Work"></input>
+                <button ng-click="saveConfiguration(configuration)">Save</button>
+            </form>
+            <div class="configuration" ng-repeat="configuration in configurations">
+                <div class="name">{{configuration.name}}</div>
+                <div class="domain">{{configuration.domain}}
+            </div>
+        </section>
                 
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/uri.js/src/URI.min.js"></script>
+        <script src="bower_components/lodash/dist/lodash.compat.js"></script>
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
-        <!-- build:js scripts/options.js -->
-        <script src="scripts/options.js"></script>
+        <!-- build:js({scripts/options}) scripts/options/options.js -->
+        <!-- add injector -->
+        <!-- injector:js -->
+        <script src="scripts/options/options.controller.js"></script>
+        <!-- endinjector -->
         <!-- endbuild -->
     </body>
 </html>
