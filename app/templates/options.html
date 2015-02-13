@@ -1,0 +1,29 @@
+<h1>{{header}}</h1>
+<h2>Add a configuration</h2>
+<form>
+    <input type="url" ng-model="config.domain" placeholder="Domain ex. www.facebook.com"></input>
+    <input type="text" ng-model="config.name" placeholder="Setting Name ex. Work"></input>
+    <input type"text" ng-model="config.destination" placeholder="Destination domain ex. www.youtube.com"></input>
+    <select ng-model="config.type" ng-options="type for type in types"></select>
+    <button ng-click="saveConfigurations(config)">Save</button>
+</form>
+<h2 ng-show="configurations.length">All Configurations</h2>
+
+<div class="configuration" ng-repeat="configuration in configurations  track by $index">
+    <div class="name" ng-show="!configuration.edit.name" ng-click="configuration.edit.name=true">{{configuration.name}}</div>
+    <input class="name" type="text" ng-model="configuration.name" ng-show="configuration.edit.name" ng-blur="configuration.edit.name=false"></input>
+
+    <div class="domain" ng-show="!configuration.edit.domain" ng-click="configuration.edit.domain=true">{{configuration.domain}}</div>
+    <input class="domain" type="url" ng-model="configuration.domain" ng-show="configuration.edit.domain" ng-blur="configuration.edit.domain=false"></input>
+
+    <div class="destination" ng-show="!configuration.edit.destination" ng-click="configuration.edit.destination=true">{{configuration.destination}}</div>
+    <input class="destination" type="text" ng-model="configuration.destination" ng-show="configuration.edit.destination" ng-blur="configuration.edit.destination=false"></input>
+
+    <div class="type" ng-show="!configuration.edit.type" ng-click="configuration.edit.type=true">{{configuration.type}}</div>
+    <input class="type" type="text" ng-model="configuration.type" ng-show="configuration.edit.type" ng-blur="configuration.edit.type=false"></input>
+
+    <button class="remove" ng-click="removeConfiguration($index)">remove</buttom>
+</div>
+    
+<h1>Current Configuration</h1>
+<input type="text" ng-model="currentConfiguration" placeholder="Setting Name ex. Work"></input>

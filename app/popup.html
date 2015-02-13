@@ -4,31 +4,60 @@
         <meta charset="utf-8">
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:css styles/main.css -->
         <link href="styles/main.css" rel="stylesheet">
         <!-- endbuild -->
     </head>
-    <body>
-        <section ui-view="" class="content">
-            <h1>How may I assist you?</h1>
-        </section>
+    <body ng-app="AssistExtension">
+          <section ng-controller="PopupCtr" class="content popup">
+              <h3>
+                You are currently configured to: {{currentConfiguration}}
+              </h3>              
+              <div class="configuration" ng-repeat="configuration in activeConfigurations">
+                  <div class="domain">
+                    {{configuration.domain}}
+                  </div>
+                  <div class="type">
+                    {{configuration.type}}
+                  </div>
+                  <div class="destination">
+                    {{configuration.destination}}
+                  </div>
+              </div>
+              <div ng-show="!configurations.length">
+                No routing for configuration: {{currentConfiguration}}
+              </div>
+              <div class="change-configuration">
+                Change current configuration
+                <input type="text" ng-model="newCurrentConfiguration" ng-keyup="submitNewConfiguration($event)"placeholder="Setting Name ex. Work"></input>
+              </div>
+              <div>
+                <a ng-href="{{getOptionsURL()}}" target="_blank">
+                  Configuration Menu
+                </a>
+              </div>
+          </section>
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="bower_components/jquery/dist/jquery.js"></script>
         <script src="bower_components/uri.js/src/URI.min.js"></script>
         <script src="bower_components/lodash/dist/lodash.compat.js"></script>
-        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular/angular.min.js"></script>
         <script src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="bower_components/angular-socket-io/socket.js"></script>
+        <script src="bower_components/socket.io-client/socket.io.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
         <!-- build:js({scripts/popup}) scripts/popup/popup.js -->
         <!-- add injector -->
         <!-- injector:js -->
-        <script src="scripts/popup/popup.js"></script>
         <script src="scripts/popup/popup.controller.js"></script>
+        <script src="scripts/messenger.js"></script>
         <!-- endinjector -->
         <!-- endbuild -->
     </body>

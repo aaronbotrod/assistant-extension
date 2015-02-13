@@ -1,3 +1,17 @@
-body {
-  padding: 20px;
+/*
+Prefix with app name. These rules come out at user stylesheet.
+*/
+.popup {
+  width: 500px;
+}
+.configuration div, .configuration input{
+  float:left;
+  margin: 0px 5px 0px 0px;
+}
+
+.configuration {
+  height: 20px;
+}
+.remove {
+  cursor: pointer;
 }

@@ -3,15 +3,19 @@
     <title>
       Assistant Extension
     </title>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="styles/background/background.css" rel="stylesheet" type="text/css">
   </head>
   <body ng-app="AssistExtension">
   <section ng-controller="BackgroundCtr" class="content">
       <h1>{{header}}</h1>
+      <h2>Add a configuration</h2>
       <form>
           <input type="url" ng-model="config.domain" placeholder="Domain ex. www.facebook.com"></input>
           <input type="text" ng-model="config.name" placeholder="Setting Name ex. Work"></input>
           <button ng-click="saveConfiguration(config)">Save</button>
       </form>
+      <h2>Current Configurations</h2>
       <div class="configuration" ng-repeat="configuration in configurations">
           <div class="name">{{configuration.name}}</div>
           <div class="domain">{{configuration.domain}}</div>
@@ -27,10 +31,14 @@
   <script src="bower_components/lodash/dist/lodash.compat.js"></script>
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="bower_components/angular-socket-io/socket.js"></script>
+  <script src="bower_components/socket.io-client/socket.io.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
 
   <!-- build:js scripts/background/*.js -->
+  <script src="scripts/background/background.socket.js"></script>
   <script src="scripts/background/background.controller.js"></script>
   <!-- endbuild -->
   </body>

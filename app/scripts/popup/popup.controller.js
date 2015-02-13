@@ -1,6 +1,46 @@
 'use strict';
 
-window.angular.module('assistExtension')
-  .controller('PopupCtr', function () {
-    console.log('Hello world');
+window.angular.module('AssistExtension',[])
+  .config(function($compileProvider){
+    $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|file|chrome-extension):/);
+  })
+  .controller('PopupCtr',function($scope, $sce, messenger) {
+    //Configurations
+    $scope.header = 'How may I assist you?';
+    $scope.config = {
+      name: 'work',
+      domain:'http://facebook.com'
+    };
+    $scope.options = chrome.extension.getURL('options.html');
+
+    //Load Background Configurations
+
+    messenger.subscribe('update', function(updatedProperties) {
+      window._.merge($scope, updatedProperties, function(a, b) {
+        return window._.isArray(a) ? b : undefined;
+      });
+      $scope.$apply();
+    });
+
+    messenger.publish('init');
+
+    $scope.$watch('newCurrentConfiguration', function(newVal) {
+      chrome.runtime.sendMessage({currentConfiguration: newVal});
+    });
+
+    $scope.$watch('currentConfiguration', function() {
+      $scope.activeConfigurations = window._.filter($scope.configurations, {name:$scope.currentConfiguration});
+      console.log($scope.configurations, $scope.activeConfigurations);
+    });
+
+    //UI Functions
+    $scope.getOptionsURL = function() {
+      return $sce.trustAsUrl($scope.options);
+    };
+
+    $scope.submitNewConfiguration = function($event) {
+      if($event.keyCode === 13) {
+        messenger.publish('update', {currentConfiguration: $scope.newCurrentConfiguration});
+      }
+    };
   });

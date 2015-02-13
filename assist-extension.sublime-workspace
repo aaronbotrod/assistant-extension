@@ -4,6 +4,42 @@
 		"selected_items":
 		[
 			[
+				"coni",
+				"configurations"
+			],
+			[
+				"confi",
+				"configurations"
+			],
+			[
+				"conf",
+				"configurations"
+			],
+			[
+				"con",
+				"configurations"
+			],
+			[
+				"configu",
+				"configurations"
+			],
+			[
+				"po",
+				"pollingInterval"
+			],
+			[
+				"url",
+				"urlConfigurations"
+			],
+			[
+				"config",
+				"configuration"
+			],
+			[
+				"lo",
+				"localStorageService"
+			],
+			[
 				"mde",
 				"modelSchema"
 			],
@@ -23,65 +59,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "app/scripts/chromereload.js",
-			"settings":
-			{
-				"buffer_size": 614,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/scripts/background.js",
-			"settings":
-			{
-				"buffer_size": 682,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/manifest.json",
-			"settings":
-			{
-				"buffer_size": 1098,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/background.html",
-			"settings":
-			{
-				"buffer_size": 335,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "bower.json",
-			"settings":
-			{
-				"buffer_size": 119,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "<!doctype html>\n<html>\n    <head>\n        <meta charset=\"utf-8\">\n        <!-- build:css styles/vendor.css -->\n        <!-- bower:css -->\n        <!-- endbower -->\n        <!-- endbuild -->\n        <!-- build:css styles/main.css -->\n        <link href=\"styles/main.css\" rel=\"stylesheet\">\n        <!-- endbuild -->\n    </head>\n    <body>\n        <h1>'Allo, 'Allo!</h1>\n\n        <!-- build:js scripts/vendor.js -->\n        <!-- bower:js -->\n        <script src=\"bower_components/jquery/jquery.js\"></script>\n        <script src=\"bower_components/lodash/dist/lodash.compat.js\"></script>\n        <!-- endbower -->\n        <!-- endbuild -->\n\n        <!-- build:js scripts/popup.js -->\n        <script src=\"scripts/popup.js\"></script>\n        <!-- endbuild -->\n    </body>\n</html>\n",
-			"file": "app/popup.html",
-			"file_size": 1520,
-			"file_write_time": 1419652684000000,
-			"settings":
-			{
-				"buffer_size": 773,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/scripts/contentscript.js",
-			"settings":
-			{
-				"buffer_size": 175,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -119,12 +96,38 @@
 	},
 	"file_history":
 	[
+		"/Users/aaronbotello/Development/assistant/extension/app/styles/main.css",
+		"/Users/aaronbotello/Development/assistant/extension/app/scripts/background/background.controller.js",
+		"/Users/aaronbotello/Development/assistant/extension/app/options.html",
+		"/Users/aaronbotello/Development/assistant/extension/app/scripts/options/options.controller.js",
+		"/Users/aaronbotello/Development/assistant/extension/app/popup.html",
+		"/Users/aaronbotello/Development/assistant/extension/app/scripts/popup/popup.controller.js",
+		"/Users/aaronbotello/Development/assistant/extension/app/manifest.json",
+		"/Users/aaronbotello/Development/assistant/extension/app/background.html",
+		"/Users/aaronbotello/Development/like/client/app/app.js",
+		"/Users/aaronbotello/Development/assistant/extension/app/scripts/background/background.socket.js",
+		"/Users/aaronbotello/Development/assistant/extension/app/bower_components/socket.io-client/.bower.json",
+		"/Users/aaronbotello/Development/assistant/extension/app/bower_components/socket.io-client/package.json",
+		"/Users/aaronbotello/Development/assistant/extension/app/bower_components/socket.io-client/socket.io.js",
+		"/Users/aaronbotello/Development/like/Gruntfile.js",
+		"/Users/aaronbotello/Development/like/client/index.html",
+		"/Users/aaronbotello/Development/assistant/extension/Gruntfile.js",
+		"/Users/aaronbotello/Development/assistant/extension/app/scripts/background/background.js",
+		"/Users/aaronbotello/Development/assistant/extension/app/styles/background.css",
+		"/Users/aaronbotello/Development/assistant/extension/app/bower_components/bootstrap/.bower.json",
+		"/Users/aaronbotello/Development/assistant/extension/app/bower_components/lodash/dist/lodash.js",
+		"/Users/aaronbotello/Development/like/client/app/main/main.controller.js",
+		"/Users/aaronbotello/Development/assistant/extension/app/scripts/chromereload.js",
+		"/Users/aaronbotello/Development/assistant/extension/app/scripts/background.js",
+		"/Users/aaronbotello/Development/assistant/extension/bower.json",
+		"/Users/aaronbotello/Development/assistant/extension/app/bower_components/uri.js/.bower.json",
+		"/Users/aaronbotello/Development/assistant/extension/app/bower_components/uri.js/bower.json",
+		"/Users/aaronbotello/Development/assistant/extension/app/scripts/contentscript.js",
+		"/Users/aaronbotello/Development/assistant/extension/app/bower_components/angular-ui/build/angular-ui-ieshiv.min.js",
+		"/Users/aaronbotello/Development/assistant/extension/app/bower_components/angular-ui/package.json",
 		"/Users/aaronbotello/Development/assistant/extension/app/scripts/url.js",
 		"/Users/aaronbotello/Development/assistant/extension/app/bower_components/simpleUri/bower.json",
-		"/Users/aaronbotello/Development/assistant/extension/bower.json",
 		"/Users/aaronbotello/Development/assistant/extension/app/scripts/backgroudn.html",
-		"/Users/aaronbotello/Development/assistant/extension/app/manifest.json",
-		"/Users/aaronbotello/Development/assistant/extension/app/popup.html",
 		"/Users/aaronbotello/Development/comicdb/client/components/navbar/navbar.controller.coffee",
 		"/Users/aaronbotello/Development/comicdb/client/app/main/main.html",
 		"/Users/aaronbotello/Development/comicdb/client/index.html",
@@ -224,6 +227,31 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"ng-hide",
+			"configuration.show",
+			"ng-show",
+			"currentConfiguration",
+			"configurations'",
+			"configurationsWithCurrSetting",
+			"console",
+			"h2",
+			"c ",
+			"c",
+			"histUrl",
+			"console",
+			"config",
+			"$rootScope",
+			"_.",
+			"angular",
+			"watch",
+			"\"",
+			"configurations",
+			"\"",
+			"content_security_policy",
+			"injector",
+			"build",
+			"inject",
+			".js",
 			"background_page",
 			"URL",
 			"Home",
@@ -304,6 +332,13 @@
 		"regex": false,
 		"replace_history":
 		[
+			"ng-show",
+			"configuration.edit",
+			"ng-hide",
+			"$scope",
+			"window._.",
+			"window.angular",
+			"'",
 			"Defini",
 			"Definition"
 		],
@@ -316,197 +351,8 @@
 	"groups":
 	[
 		{
-			"selected": 5,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "app/scripts/chromereload.js",
-					"settings":
-					{
-						"buffer_size": 614,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1,
-								2
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/scripts/background.js",
-					"settings":
-					{
-						"buffer_size": 682,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								664,
-								664
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/manifest.json",
-					"settings":
-					{
-						"buffer_size": 1098,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								247,
-								247
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/background.html",
-					"settings":
-					{
-						"buffer_size": 335,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								303,
-								303
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "bower.json",
-					"settings":
-					{
-						"buffer_size": 119,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								63,
-								63
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/popup.html",
-					"settings":
-					{
-						"buffer_size": 773,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								773,
-								773
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "app/scripts/contentscript.js",
-					"settings":
-					{
-						"buffer_size": 175,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								173,
-								173
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -516,7 +362,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 31.0
 	},
 	"layout":
 	{
@@ -552,6 +398,110 @@
 		"selected_items":
 		[
 			[
+				"main.css",
+				"app/styles/main.css"
+			],
+			[
+				"background.con",
+				"app/scripts/background/background.controller.js"
+			],
+			[
+				"options.contr",
+				"app/scripts/options/options.controller.js"
+			],
+			[
+				"options.html",
+				"app/options.html"
+			],
+			[
+				"option.h",
+				"app/options.html"
+			],
+			[
+				"option.html",
+				"app/options.html"
+			],
+			[
+				"options.con",
+				"app/scripts/options/options.controller.js"
+			],
+			[
+				"popup.con",
+				"app/scripts/popup/popup.controller.js"
+			],
+			[
+				"popup",
+				"app/popup.html"
+			],
+			[
+				"backgourn.control",
+				"app/scripts/background/background.controller.js"
+			],
+			[
+				"background.cont",
+				"app/scripts/background/background.controller.js"
+			],
+			[
+				"manifest",
+				"app/manifest.json"
+			],
+			[
+				"popup.html",
+				"app/popup.html"
+			],
+			[
+				"backgroun.con",
+				"app/scripts/background/background.controller.js"
+			],
+			[
+				"options",
+				"app/options.html"
+			],
+			[
+				"manif",
+				"app/manifest.json"
+			],
+			[
+				"backt",
+				"app/background.html"
+			],
+			[
+				"background",
+				"app/scripts/background/background.controller.js"
+			],
+			[
+				"background.socket.js",
+				"app/scripts/background/background.socket.js"
+			],
+			[
+				"back",
+				"app/background.html"
+			],
+			[
+				"grunt",
+				"Gruntfile.js"
+			],
+			[
+				"manife",
+				"app/manifest.json"
+			],
+			[
+				"background.js",
+				"app/scripts/background/background.js"
+			],
+			[
+				"backgraoun",
+				"app/scripts/background/background.js"
+			],
+			[
+				"backgroun",
+				"app/background.html"
+			],
+			[
+				"manifes",
+				"app/manifest.json"
+			],
+			[
 				"bower",
 				"bower.json"
 			],
@@ -566,10 +516,6 @@
 			[
 				"index.html",
 				"client/index.html"
-			],
-			[
-				"grunt",
-				"Gruntfile.js"
 			],
 			[
 				"packa",
@@ -674,6 +620,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 186.0,
 	"status_bar_visible": true
 }
