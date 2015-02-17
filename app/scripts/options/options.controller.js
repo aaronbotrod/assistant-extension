@@ -3,12 +3,16 @@
 var app = window.angular.module('AssistExtension',['ngRoute']);
 app.config(['$routeProvider',
   function($routeProvider) {
-    $routeProvider.
-      when('/', {
+    $routeProvider
+      .when('/', {
         templateUrl: 'templates/options.html',
         controller: 'OptionsCtr'
-      }).
-      when('/bookmarks/:bookmarkName', {
+      })
+      .when('/analytics',{
+        templateUrl:'templates/analytics.html',
+        controller: 'AnalyticsCtr'
+      })
+      .when('/bookmarks/:bookmarkName', {
         templateUrl: 'templates/bookmarks.html',
         controller: 'BookmarksCtr'
       });
@@ -23,6 +27,15 @@ app.controller('BookmarksCtr', function ($scope, $routeParams) {
       });
     });
   });
+
+app.controller('AnalyticsCtr', function ($scope, $routeParams, messenger) {
+  messenger.subscribe('analytics.update', function(analytics) {
+    console.log(analytics);
+    $scope.analytics = analytics;
+    $scope.$apply();
+  });
+  messenger.publish('analytics.request', {});
+});
 app.controller('OptionsCtr', function ($scope, $location, messenger) {
     $scope.header = 'How may I assist you?';
     $scope.config = {

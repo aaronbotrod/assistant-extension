@@ -10,7 +10,7 @@
     "default_locale": "en",
     "background": {
         // "page": "background.html"
-        "scripts":["scripts/chromereload.js","bower_components/jquery/dist/jquery.js", "bower_components/uri.js/src/URI.min.js", "bower_components/lodash/dist/lodash.compat.js", "bower_components/angular/angular.js", "bower_components/angular-local-storage/dist/angular-local-storage.js", "bower_components/bootstrap/dist/js/bootstrap.js", "bower_components/angular-socket-io/socket.js", "bower_components/socket.io-client/socket.io.js", "scripts/background/background.controller.js",  "scripts/messenger.js", "scripts/background/background.socket.js"]
+        "scripts":["scripts/chromereload.js","bower_components/jquery/dist/jquery.js", "bower_components/uri.js/src/URI.min.js", "bower_components/lodash/dist/lodash.compat.js", "bower_components/angular/angular.js", "bower_components/angular-local-storage/dist/angular-local-storage.js", "bower_components/bootstrap/dist/js/bootstrap.js", "bower_components/angular-socket-io/socket.js", "bower_components/socket.io-client/socket.io.js", "scripts/background/background.controller.js",  "scripts/messenger.js", "scripts/analytics.js", "scripts/background/background.socket.js"]
     },
     "browser_action": {
         "default_icon": {

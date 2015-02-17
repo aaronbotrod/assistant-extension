@@ -1,8 +1,8 @@
 'use strict';
 window.angular.module('AssistExtension',['LocalStorageModule', 'btford.socket-io'])
-  .run(function ($rootScope, localStorageService, messenger) {
+  .run(function ($rootScope, localStorageService, messenger, webAnalytics) {
+    $rootScope.analytics = webAnalytics;
     $rootScope.header = 'How may I assist you?';
-
     $rootScope.configurationsUnbind = localStorageService.bind($rootScope, 'configurations', []);
     $rootScope.currentConfigurationUnbind = localStorageService.bind($rootScope, 'currentConfiguration', '');
     $rootScope.analyticsUnbind = localStorageService.bind($rootScope, 'analytics', {windows:{}, tabs:{}});
@@ -28,20 +28,6 @@ window.angular.module('AssistExtension',['LocalStorageModule', 'btford.socket-io
       $rootScope.$apply();
     });
 
-    // chrome.runtime.onMessage.addListener(function(message, sender, responseCb) {
-    //   if(sender.url === window.location.href) {return;}
-    //   if(message.currentConfiguration) {
-    //     $rootScope.currentConfiguration = message.currentConfiguration;
-    //   } else if (message.query) {
-    //     var response = $rootScope[message.query];
-    //     responseCb(response);
-    //   } else if(message.configurations) {
-    //     console.log(message);
-    //     $rootScope.configurations = message.configurations;
-    //     chrome.runtime.sendMessage({configurations: $rootScope.configurations});
-    //   }
-    //   $rootScope.$apply();
-    // });
     $rootScope.$watch('currentConfiguration', function() {
       chrome.browserAction.setBadgeText({text: $rootScope.currentConfiguration});
     });
@@ -62,12 +48,7 @@ window.angular.module('AssistExtension',['LocalStorageModule', 'btford.socket-io
         cb(tab);
       });
     }
-    // chrome.tabs.onActivated.addListener(function() {
-    //   recordSelected();
-    // });
-    // chrome.windows.onFocusChanged.addListener(function(){
-    //   recordSelected();
-    // });
+
     chrome.history.onVisited.addListener(function(histInfo){
       var urlConfigurations = getUrlConfigurations(histInfo.url, $rootScope.configurations, $rootScope.currentConfiguration);
       if(urlConfigurations.length){
@@ -91,26 +72,7 @@ window.angular.module('AssistExtension',['LocalStorageModule', 'btford.socket-io
           
       }
     });
-    $rootScope.activity = [];
-    $rootScope.pollingInterval = 10000;
 
-    // function analyticsUpdate() {
-    //   chrome.windows.getAll({populate:true}, function(windows){
-    //     console.log(windows);
-    //     windows.forEach(function(win){
-    //       win.tabs.forEach(function(tab) {
-    //         if(!$rootScope.analytics.tabs[tab.url]) {
-    //           $rootScope.analytics.tabs[tab.url] = tab;
-    //           $rootScope.analytics.tabs[tab.url].time = $rootScope.pollingInterval;
-    //         } else {
-    //           $rootScope.analytics.tabs[tab.url].time += $rootScope.pollingInterval;
-    //         }
-    //       });
-    //     });
-    //   });
-    //   $timeout(analyticsUpdate, $rootScope.pollingInterval);
-    // }
-    // $timeout(analyticsUpdate, $rootScope.pollingInterval);
 
   });
 
