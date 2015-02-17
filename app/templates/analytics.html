@@ -5,19 +5,16 @@
     </div>
     <div ng-repeat="session in val.sessions">
       <div class="timeOpen">
-       Time Open: {{session.timeOpen}}
+       Time Open: {{session.timeOpen/60000 | number:2}} mins.
       </div>
       <div class="timeActive">
-        Time Active: {{session.timeActive}}
+        Time Active: {{session.timeActive/60000| number:2}} mins.
       </div>
       <div class="firstCheckin">
         First Checking: {{session.firstCheckin | date:'medium'}}
       </div>
       <div class="lastCheckin">
         Last Checking: {{session.lastCheckin | date:'medium'}}
-      </div>
-      <div class="pollingInterval">
-        Interval Time: {{session.pollingInterval}}
       </div>
     </div>
   </div>

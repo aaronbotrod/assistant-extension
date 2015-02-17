@@ -21,7 +21,6 @@ window.angular.module('AssistExtension')
       $timeout(analyticsUpdate, configuration.pollingInterval);
     }
     messenger.subscribe('analytics.request', function() {
-      console.log(analytics);
       messenger.publish('analytics.update', analytics);
     });
     function checkin(win, tab) {
@@ -33,8 +32,8 @@ window.angular.module('AssistExtension')
           sessions:  [{
               timeOpen: 0,
               timeActive: 0,
-              firstCheckin: new Date(),
-              lastCheckin: new Date(),
+              firstCheckin: Date.now(),
+              lastCheckin: Date.now(),
               pollingInterval: configuration.pollingInterval
             }]
           };
@@ -42,24 +41,27 @@ window.angular.module('AssistExtension')
       }
 
       //Find if its the same session
-      var session = window._.find(entry.sessions, function(session) {
-        return Date.now() - session.lastCheckin.getTime() < configuration.newSessionInterval && session.pollingInterval === configuration.pollingInterval;
-      });
+      var session = null;
+      var latestSession = entry.sessions[entry.sessions.length-1];
+      if(Date.now() - latestSession.lastCheckin < configuration.newSessionInterval && latestSession.pollingInterval === configuration.pollingInterval){
+        session = latestSession;
+      }
+      //Updated session
       if(session) {
-        var timeElapsed = Date.now() - session.lastCheckin.getTime();
+        var timeElapsed = Date.now() - session.lastCheckin;
         session.timeOpen += timeElapsed;
         if(win.focused && tab.active) {
           session.timeActive+=timeElapsed;
         }
-        session.lastCheckin = new Date();
+        session.lastCheckin = Date.now();
         return;
       } else {
         //New session;
         session = {
           timeOpen: 0,
           timeActive: 0,
-          firstCheckin: new Date(),
-          lastCheckin: new Date(),
+          firstCheckin: Date.now(),
+          lastCheckin: Date.now(),
           pollingInterval: configuration.pollingInterval
         };
         entry.sessions.push(session);
@@ -67,17 +69,5 @@ window.angular.module('AssistExtension')
       }
     }
     $timeout(analyticsUpdate, configuration.pollingInterval);
-    // function recordSelected(info) {
-    //   console.log(info);
-    //   chrome.tabs.get(info.tabId, function(tab) {
-    //     console.log(tab);
-    //   });
-    // }
-    // chrome.tabs.onActivated.addListener(function() {
-    //   recordSelected();
-    // });
-    // chrome.windows.onFocusChanged.addListener(function(){
-    //   recordSelected();
-    // });
     return {};
   });

@@ -1,0 +1,9 @@
+.url, .domain {
+  color: blue;
+}
+.timeActive, .destination{
+  color:green;
+}
+input[type=text], input[type=url]{
+  width: 250px;
+}

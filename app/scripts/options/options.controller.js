@@ -30,7 +30,6 @@ app.controller('BookmarksCtr', function ($scope, $routeParams) {
 
 app.controller('AnalyticsCtr', function ($scope, $routeParams, messenger) {
   messenger.subscribe('analytics.update', function(analytics) {
-    console.log(analytics);
     $scope.analytics = analytics;
     $scope.$apply();
   });
@@ -39,9 +38,9 @@ app.controller('AnalyticsCtr', function ($scope, $routeParams, messenger) {
 app.controller('OptionsCtr', function ($scope, $location, messenger) {
     $scope.header = 'How may I assist you?';
     $scope.config = {
-      name: 'work',
-      domain:'http://facebook.com',
-      destination: 'http://youtube.com',
+      name: '',
+      domain:'',
+      destination: '',
       type: 'reroute'
     };
 
@@ -60,6 +59,14 @@ app.controller('OptionsCtr', function ($scope, $location, messenger) {
     $scope.saveConfigurations = function(config) {
       $scope.configurations.push(config);
       messenger.publish('update', {configurations: $scope.configurations});
+    };
+
+    $scope.getDestinationText = function() {
+      if($scope.config.type === 'reroute') {
+        return 'Destination domain ex. http://www.youtube.com';
+      } else {
+        return 'Bookmark Folder Name ex. "Bookmarks Bar"';
+      }
     };
 
     $scope.removeConfiguration = function($index) {

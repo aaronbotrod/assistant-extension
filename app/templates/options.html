@@ -1,9 +1,9 @@
 <h1>{{header}}</h1>
 <h2>Add a configuration</h2>
 <form>
-    <input type="url" ng-model="config.domain" placeholder="Domain ex. www.facebook.com"></input>
     <input type="text" ng-model="config.name" placeholder="Setting Name ex. Work"></input>
-    <input type"text" ng-model="config.destination" placeholder="Destination domain ex. www.youtube.com"></input>
+    <input type="url" ng-model="config.domain" placeholder="Domain ex. http://www.facebook.com"></input>
+    <input type="text" ng-model="config.destination" placeholder="{{getDestinationText()}}"></input>
     <select ng-model="config.type" ng-options="type for type in types"></select>
     <button ng-click="saveConfigurations(config)">Save</button>
 </form>

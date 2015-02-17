@@ -35,12 +35,16 @@
                 <input type="text" ng-model="newCurrentConfiguration" ng-keyup="submitNewConfiguration($event)"placeholder="Setting Name ex. Work"></input>
               </div>
               <div>
-                <a ng-href="{{getOptionsURL()}}" target="_blank">
-                  Configuration Menu
-                </a>
-                <a ng-href="{{getOptionsURL()}}#/analytics" target="_blank">
-                  Analytics
-                </a>
+                <div>
+                  <a ng-href="{{getOptionsURL()}}" target="_blank">
+                    Add and Edit Routes
+                  </a>
+                </div>
+                <div>
+                  <a ng-href="{{getOptionsURL()}}#/analytics" target="_blank">
+                    Web History
+                  </a>
+                </div>
               </div>
           </section>
         <!-- build:js scripts/vendor.js -->
