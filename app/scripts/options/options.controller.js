@@ -54,7 +54,7 @@ app.controller('OptionsCtr', function ($scope, $location, messenger) {
 
     messenger.publish('init');
 
-    $scope.types = ['reroute', 'bookmarks'];
+    $scope.types = ['reroute', 'bookmarks', 'application'];
     $scope.configurations = [];
     $scope.saveConfigurations = function(config) {
       $scope.configurations.push(config);
@@ -72,5 +72,12 @@ app.controller('OptionsCtr', function ($scope, $location, messenger) {
     $scope.removeConfiguration = function($index) {
       $scope.configurations.splice($index, 1);
       messenger.publish('update', {configurations: $scope.configurations});
+    };
+
+    $scope.killProcess = function(process) {
+      var res = window.confirm('Are you sure you want to kill process '+process.cmd);
+      if(res === true) {
+        messenger.publish('process:kill', process);
+      }
     };
   });

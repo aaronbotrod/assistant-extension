@@ -2,17 +2,24 @@
 'use strict';
 
 window.angular.module('AssistExtension')
-  .factory('socket', function(socketFactory) {
+  .factory('socketService', function(socketFactory) {
 
     // socket.io now auto-configures its connection when we ommit a connection url
     var ioSocket = io('http://localhost:9000', {
       // Send auth token on connection, you will need to DI the Auth service above
       // 'query': 'token=' + Auth.getToken()
-      path: '/socket.io-client'
+      path: '/socket.io-client',
+      reconnectionAttempts: 3
     });
-
+    
     var socket = socketFactory({
       ioSocket: ioSocket
+    });
+
+    ['disconnect','error', 'reconnect','reconnect_attempt', 'reconnect_error', 'reconnect_failed'].forEach(function(eventName){
+      socket.on(eventName, function(){
+        console.log(arguments);
+      });
     });
 
     return {

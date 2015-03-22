@@ -2,8 +2,9 @@
 <h2>Add a configuration</h2>
 <form>
     <input type="text" ng-model="config.name" placeholder="Setting Name ex. Work"></input>
-    <input type="url" ng-model="config.domain" placeholder="Domain ex. http://www.facebook.com"></input>
-    <input type="text" ng-model="config.destination" placeholder="{{getDestinationText()}}"></input>
+    <input type="text" ng-show="config.type === 'application'" ng-model="config.application" placeholder="Battle.net App"></input>
+    <input type="url" ng-hide="config.type === 'application'" ng-model="config.domain" placeholder="Domain ex. http://www.facebook.com"></input>
+    <input type="text" ng-hide="config.type === 'application'" ng-model="config.destination" placeholder="{{getDestinationText()}}"></input>
     <select ng-model="config.type" ng-options="type for type in types"></select>
     <button ng-click="saveConfigurations(config)">Save</button>
 </form>
@@ -16,6 +17,9 @@
     <div class="domain" ng-show="!configuration.edit.domain" ng-click="configuration.edit.domain=true">{{configuration.domain}}</div>
     <input class="domain" type="url" ng-model="configuration.domain" ng-show="configuration.edit.domain" ng-blur="configuration.edit.domain=false"></input>
 
+    <div class="application" ng-show="!configuration.edit.application" ng-click="configuration.edit.application=true">{{configuration.application}}</div>
+    <input class="application" type="text" ng-model="configuration.application" ng-show="configuration.edit.application" ng-blur="configuration.edit.application=false"></input>
+
     <div class="destination" ng-show="!configuration.edit.destination" ng-click="configuration.edit.destination=true">{{configuration.destination}}</div>
     <input class="destination" type="text" ng-model="configuration.destination" ng-show="configuration.edit.destination" ng-blur="configuration.edit.destination=false"></input>
 
@@ -24,6 +28,15 @@
 
     <button class="remove" ng-click="removeConfiguration($index)">remove</buttom>
 </div>
-    
+
+<div class="processes">
+    <div class="process" ng-repeat="process in processes">
+        <div>{{process.pid}}</div>
+        <div>{{process.cmd}}</div>
+        <div>{{process.started}}</div>
+        <div>{{process.user}}</div>
+        <button ng-click="killProcess(process)">Kill</button>
+    </div>
+</div>
 <h1>Current Configuration</h1>
 <input type="text" ng-model="currentConfiguration" placeholder="Setting Name ex. Work"></input>
