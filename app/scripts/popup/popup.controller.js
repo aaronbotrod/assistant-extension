@@ -19,6 +19,11 @@ window.angular.module('AssistExtension',[])
       window._.merge($scope, updatedProperties, function(a, b) {
         return window._.isArray(a) ? b : undefined;
       });
+      $scope.configNames = []
+      $scope.configurations.forEach(function(config){
+          $scope.configNames.push(config.name);
+      });
+      _.uniq($scope.configNames);
       $scope.$apply();
     });
 
@@ -38,9 +43,16 @@ window.angular.module('AssistExtension',[])
       return $sce.trustAsUrl($scope.options);
     };
 
+    $scope.updateConfiguration = function(newCurrentConfiguration) {
+      console.log(newCurrentConfiguration);
+      messenger.publish('update', {currentConfiguration: newCurrentConfiguration});
+    }
+
     $scope.submitNewConfiguration = function($event) {
       if($event.keyCode === 13) {
         messenger.publish('update', {currentConfiguration: $scope.newCurrentConfiguration});
       }
     };
+
+
   });

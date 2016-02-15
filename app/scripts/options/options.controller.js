@@ -17,7 +17,8 @@ app.config(['$routeProvider',
         controller: 'BookmarksCtr'
       });
   }]);
-app.controller('BookmarksCtr', function ($scope, $routeParams) {
+app.controller('BookmarksCtr', function ($rootScope, $scope, $routeParams) {
+    $rootScope.title = $routeParams.bookmarkName;
     chrome.bookmarks.getTree(function(b){console.log(b);});
     chrome.bookmarks.search({title:$routeParams.bookmarkName}, function(bookmarkTree){
       var folderId = bookmarkTree[0].id;
@@ -35,7 +36,8 @@ app.controller('AnalyticsCtr', function ($scope, $routeParams, messenger) {
   });
   messenger.publish('analytics.request', {});
 });
-app.controller('OptionsCtr', function ($scope, $location, messenger) {
+app.controller('OptionsCtr', function ($rootScope, $scope, $location, messenger) {
+    $rootScope.title = 'Options';
     $scope.header = 'How may I assist you?';
     $scope.config = {
       name: '',

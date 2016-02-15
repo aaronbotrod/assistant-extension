@@ -14,7 +14,8 @@
     <body ng-app="AssistExtension">
           <section ng-controller="PopupCtr" class="content popup">
               <h3>
-                You are currently configured to: {{currentConfiguration}}
+                <span>You are currently configured to:</span>
+                <select ng-model="currentConfiguration" ng-options="name for name in configNames" ng-change="updateConfiguration(currentConfiguration)"></select>
               </h3>              
               <div class="configuration" ng-repeat="configuration in activeConfigurations">
                   <div class="domain">
@@ -29,10 +30,6 @@
               </div>
               <div ng-show="!configurations.length">
                 No routing for configuration: {{currentConfiguration}}
-              </div>
-              <div class="change-configuration">
-                Change current configuration
-                <input type="text" ng-model="newCurrentConfiguration" ng-keyup="submitNewConfiguration($event)"placeholder="Setting Name ex. Work"></input>
               </div>
               <div>
                 <div>

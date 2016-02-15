@@ -1,6 +1,9 @@
 <!doctype html>
-<html>
+<html ng-app="AssistExtension">
     <head>
+        <title>
+            {{title}}
+        </title>
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
@@ -11,7 +14,7 @@
         <link href="styles/main.css" rel="stylesheet">
         <!-- endbuild -->
     </head>
-    <body ng-app="AssistExtension">
+    <body>
         <section ng-view="" class="content">
 
         </section>
